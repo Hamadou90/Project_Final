@@ -11,7 +11,7 @@ const Login = () => {
   const router = useRouter();
 
   useEffect(() => {
-    if(localStorage.getItem('token')){
+    if (localStorage.getItem('token')) {
       router.push('/');
     }
   }, []);
@@ -46,7 +46,7 @@ const Login = () => {
     setEmail('');
     setPassword('');
     if (response.success) {
-      localStorage.setItem('connectedUser', JSON.stringify({token: response.token, email: response.email}));
+      localStorage.setItem('connectedUser', JSON.stringify({ token: response.token, email: response.email }));
       toast.success('You are successfully logged in!', {
         position: 'top-left',
         autoClose: 3000,
@@ -57,27 +57,11 @@ const Login = () => {
         progress: undefined,
       });
 
-      // setTimeout(() => {
-      //   toast.success('Welcome into your Profile !!!', {
-      //     position: 'top-center',
-      //     autoClose: 5000,
-      //     hideProgressBar: false,
-      //     closeOnClick: true,
-      //     pauseOnHover: true,
-      //     draggable: true,
-      //     progress: undefined,
-      //   });        
-      // }, 6000);
-
-      // setTimeout(() => {
-      //   router.push('http://localhost:3000/');
-      // }, 11000);
-
       setTimeout(() => {
         router.push(`${process.env.NEXT_PUBLIC_HOST}/`);
       }, 6000);
     }
-    else{
+    else {
       toast.error(response.error, {
         position: 'top-left',
         autoClose: 5000,

@@ -4,7 +4,6 @@ import styles from '../styles/About.module.css';
 const About = () => {
   return (
     <div className="min-h-screen flex items-start justify-center py-2 px-4 sm:px-6 lg:px-8">
-      {/* <p>About Us information here</p>  */}
 
       <div className={styles.container}>
         <h1 className="text-center font-bold text-2xl mb-6">About Tourist Destination Portal</h1>

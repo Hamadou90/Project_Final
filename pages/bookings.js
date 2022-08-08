@@ -31,9 +31,7 @@ const bookings = () => {
 
   return (
     <div className="min-h-screen flex items-start justify-center py-24 px-4 sm:px-6 lg:px-8">
-      {/* <div className='container mx-auto w-full'> */}
-        <h1 className='font-semibold justify-center items-center p-8 text-xl'>My Bookings</h1>
-      {/* </div> */}
+      <h1 className='font-semibold justify-center items-center p-8 text-xl'>My Bookings</h1>
       <div className="container mx-auto">
 
         <div className="flex flex-col">

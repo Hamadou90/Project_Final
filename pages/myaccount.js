@@ -10,8 +10,6 @@ const Myaccount = () => {
   const [address, setAddress] = useState('');
   const [phone, setPhone] = useState('');
   const [photo, setPhoto] = useState('');
-  // const [state, setState] = useState('');
-  // const [pincode, setPincode] = useState('');
   const [password, setPassword] = useState('');
   const [npassword, setNpassword] = useState('');
   const [cnpassword, setCNpassword] = useState('');
@@ -205,27 +203,11 @@ const Myaccount = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className="mx-auto flex my-4">
-          <div className="px-2 w-1/2">
-            <div className="mb-1">
-              <label htmlFor="state" className="leading-7 text-sm text-gray-600">State:</label>
-              <input onChange={handleChange} value={state} type="text" id="state" name="state" className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-            </div>
-          </div>
-          <div className="px-2 w-1/2">
-            <div className="mb-1">
-              <label htmlFor="city" className="leading-7 text-sm text-gray-600">District:</label>
-              <input onChange={handleChange} value={city} type="text" id="city" name="city" className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-            </div>
-          </div>
-        </div> */}
-
         <div className="mb-10 mx-4">
           <button onClick={handleUserSubmit} className="disabled:bg-red-200 flex mr-2 text-white bg-red-500 border-0 py-2 px-2 focus:outline-none hover:bg-red-600 rounded text-sm">Change Details</button>
         </div>
 
-
+    
         <h2 className='font-bold text-xl'>2. Change Password</h2>
         <div className="mx-auto flex my-4">
           <div className="px-2 w-1/3">
