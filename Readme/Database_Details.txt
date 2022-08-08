@@ -1,0 +1,16 @@
+After being Connected to pqsl:
+
+------ Creation of the Database ---------
+CREATE DATABASE T_Rec_Sys;
+
+------ Creation of the Admin-User and Grant of Access on the Database --------
+CREATE USER "T_Rec_Sys-Admin" WITH ECREATE USER Project WITH ENCRYPTED PASSWORD 'Project';NCRYPTED PASSWORD 'T_Rec_Sys';
+
+CREATE USER Project WITH ENCRYPTED PASSWORD 'Project';
+
+
+
+
+GRANT ALL PRIVILEGES ON DATABASE T_Rec_Sys TO "T_Rec_Sys-Admin";
+
+GRANT ALL PRIVILEGES ON DATABASE T_Rec_Sys to Project;
